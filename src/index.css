@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+
   body {
     @apply antialiased;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply box-border;
   }
 }
 

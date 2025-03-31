@@ -6,33 +6,48 @@ const HomeSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 4rem;
+  padding: 6rem 2rem 2rem;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
 
   @media (max-width: 768px) {
-    padding: 2rem;
+    padding: 5rem 1.5rem 1.5rem;
   }
 `;
 
 const Title = styled(motion.h1)`
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
   font-weight: normal;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const Paragraph = styled(motion.p)`
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const Links = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: auto;
   padding-top: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
 `;
 
 const SocialLink = styled(motion.a)`
@@ -40,9 +55,14 @@ const SocialLink = styled(motion.a)`
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s ease;
+  font-size: 1.1rem;
 
   &:hover {
     opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
   }
 `;
 
